@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python -c \"import importlib.util; mods=['pypdf','PyPDF2','pdfplumber','fitz']; [print\\(m, bool\\(importlib.util.find_spec\\(m\\)\\)\\) for m in mods]\")",
+      "PowerShell(pip install *)",
+      "PowerShell(python -m compileall main.py)",
+      "PowerShell(python -m pytest -q)",
+      "PowerShell(docker compose version *)"
+    ]
+  }
+}
